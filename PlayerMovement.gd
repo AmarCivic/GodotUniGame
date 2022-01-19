@@ -52,3 +52,5 @@ func _physics_process(delta):
 		var collision = get_slide_collision(index)
 		if collision.collider.is_in_group("Enemies"):
 			position = Vector2(0,0)
+		if collision.collider.is_in_group("Finish"):
+			get_tree().change_scene("res://EndScreen.tscn")

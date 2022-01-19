@@ -198,38 +198,6 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=14]
-resource_name = "EnemyIdle2"
-length = 0.7
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 0, 2, 3 ]
-}
-
-[sub_resource type="Animation" id=15]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
-}
-
 [sub_resource type="Animation" id=16]
 resource_name = "EnemyIdle2"
 length = 0.7
@@ -518,6 +486,38 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
+[sub_resource type="Animation" id=14]
+resource_name = "EnemyIdle2"
+length = 0.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 0, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
 [node name="World" type="Node2D"]
 
 [node name="Background" type="TileMap" parent="."]
@@ -645,23 +645,6 @@ shape = SubResource( 4 )
 autoplay = "EnemyIdle2"
 anims/EnemyIdle2 = SubResource( 12 )
 anims/RESET = SubResource( 13 )
-
-[node name="End" type="StaticBody2D" parent="." groups=["Finish"]]
-position = Vector2( 4560, 8 )
-
-[node name="Sprite" type="Sprite" parent="End" groups=["Enemies"]]
-position = Vector2( 960, 0 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 13 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="End"]
-position = Vector2( 960, 8 )
-shape = SubResource( 4 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="End"]
-autoplay = "EnemyIdle2"
-anims/EnemyIdle2 = SubResource( 14 )
-anims/RESET = SubResource( 15 )
 
 [node name="Enemy6" type="StaticBody2D" parent="." groups=["Enemies"]]
 position = Vector2( 1841, -4 )
@@ -822,3 +805,20 @@ shape = SubResource( 4 )
 autoplay = "EnemyIdle2"
 anims/EnemyIdle2 = SubResource( 32 )
 anims/RESET = SubResource( 33 )
+
+[node name="End" type="StaticBody2D" parent="." groups=["Finish"]]
+position = Vector2( 4560, 8 )
+
+[node name="Sprite" type="Sprite" parent="End" groups=["Enemies"]]
+position = Vector2( 960, 0 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 13 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="End"]
+position = Vector2( 960, 8 )
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="End"]
+autoplay = "EnemyIdle2"
+anims/EnemyIdle2 = SubResource( 14 )
+anims/RESET = SubResource( 15 )
