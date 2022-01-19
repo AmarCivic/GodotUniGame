@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TilesetMap.jpg-50bcd29739512fc803b8d57a0b700f28.stex"
+path="res://.import/PlayerSheet.png-04ef2d58c6f0efb7267d0df71bdda690.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilemaps/TilesetMap.jpg"
-dest_files=[ "res://.import/TilesetMap.jpg-50bcd29739512fc803b8d57a0b700f28.stex" ]
+source_file="res://Assets/CharSheets/Player/PlayerSheet.png"
+dest_files=[ "res://.import/PlayerSheet.png-04ef2d58c6f0efb7267d0df71bdda690.stex" ]
 
 [params]
 
