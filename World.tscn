@@ -28,7 +28,7 @@ current = true
 
 [node name="Sprite" type="Sprite" parent="Platform"]
 position = Vector2( 0, 85 )
-scale = Vector2( 28, 0.3 )
+scale = Vector2( 10, 0.3 )
 texture = ExtResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Platform"]
