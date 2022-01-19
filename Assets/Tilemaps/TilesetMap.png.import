@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle.png-ceeb3de301b03d687f9049ace595f395.stex"
+path="res://.import/TilesetMap.png-42293d98431e9fb0d761c615df597e63.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/CharSheets/Enemies/Idle.png"
-dest_files=[ "res://.import/Idle.png-ceeb3de301b03d687f9049ace595f395.stex" ]
+source_file="res://Assets/Tilemaps/TilesetMap.png"
+dest_files=[ "res://.import/TilesetMap.png-42293d98431e9fb0d761c615df597e63.stex" ]
 
 [params]
 

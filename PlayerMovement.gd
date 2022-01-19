@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
 const UP = Vector2(0,-1)
-const ACCEL = 10
+const ACCEL = 20
 const GRAVITY = 20
-const MAXFALLSPEED = 200
-const MAXSPEED = 80
-const JUMPFORCE = 300
+const MAXFALLSPEED = 300
+const MAXSPEED = 160
+const JUMPFORCE = 350
 
 var motion = Vector2()
 var facing_right = true
@@ -47,3 +47,8 @@ func _physics_process(delta):
 		elif motion.y > 0:
 			$AnimationPlayer.play("PlayerFallAni")
 	motion = move_and_slide(motion,UP)
+	
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("Enemies"):
+			position = Vector2(0,0)
